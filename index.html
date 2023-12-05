@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -51,7 +51,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo"><img src="./assets/Prash.svg" alt="Logo"></div>
+      <div class="logo"><h1>PRASH</h1></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -107,6 +107,7 @@
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
+      
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -368,7 +369,16 @@
 
     <!--------------- PROJECTS -------------------->
     
-    <section id="projects" >
+    <section id="mobile-project">
+      <h1 class="title">Project</h1>
+      <div class="project-nav-bar">
+        <a  class="project-nav" onclick="projectTab('left')">Code Gen</a>
+        <a  class="project-nav" onclick="projectTab('right')">Pic Ai</a>
+      </div>
+      
+    </section>
+
+    <section id="projects">
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="nav-bar">

@@ -539,7 +539,9 @@ footer p {
 
 }
 
-
+#mobile-project{
+  display:none;
+}
 
 .nav-bar {
   margin-top: 30px;
@@ -761,3 +763,5 @@ footer p {
   top:50%;
 
 }
+
+
