@@ -161,7 +161,6 @@
     </section>
     
     <section id="experience">
-      
       <div class="card1">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -290,18 +289,25 @@
             </div>
           </div>
       </div>
-      
-      
-      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#tech'"
-      />
+        onclick="location.href='./#tech'"/>
     </section>
 
     <section id="tech">
+      <div id="tech-container">
+        <h1 class="title">Techs</h1>
+        <p class="section__text__p1">Techs & Tools That i know</p>
+        <div class="item">
+          <img src="./assets/python-svgrepo-com (4).svg"/>
+          <h3 class="logo-title">Python</h3>
+        </div>
+      </div>
+    </section>
+
+   <!--  <section id="tech">
       <div id="tech-container">
         <h1 class="title">Techs</h1>
         <p class="section__text__p1">Techs & Tools That i know</p>
@@ -365,17 +371,42 @@
       </div>
       <button class="scroll-btn left-btn" onclick="scrollTechSlider('left')"><img src="./assets/reshot-icon-bold-left-arrow-EZR3JVKL4M-60f71.svg" alt="left-arrow"></button>
       <button class="scroll-btn right-btn" onclick="scrollTechSlider('right')"><img src="./assets/reshot-icon-bold-left-arrow-EZR3JVKL4M-60f71.svg" alt="right-arrow" style="transform: rotate(180deg)"></button>
-    </section>
+    </section> -->
 
     <!--------------- PROJECTS -------------------->
     
-    <section id="mobile-project">
+    <section id="mobile-project" style="margin-bottom:0px;">
       <h1 class="title">Project</h1>
       <div class="project-nav-bar">
         <a  class="project-nav" onclick="projectTab('left')">Code Gen</a>
         <a  class="project-nav" onclick="projectTab('right')">Pic Ai</a>
       </div>
-      
+      <div class="project-container-tab" >
+        <div class="codegen-container-mobile">
+          <div class="codegen-mobile">
+            <div class="tab1" id="codegen-tab-mobile" style="padding-bottom:30px">
+              <h1 >CodeGen</h1>
+              <p >This project investigates the impact of the replitv3 3B language model on code generation. By extensively training on diverse code and language. our aim is to enhance its understanding of coding paradigms and syntax. Through fine-tuning, the model gains a deep grasp of programming context, allowing it to predict coding patterns effectively.</p>
+            </div>
+            <div class="tab2" id="codegen-tab-mobile">
+              <p>This is tab2</p>
+            </div>
+            
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="dotstyle dotstyle-fillup">
+        <ul>
+          <li class="click-dot"><a class="current" id="1" onclick="togglecurretClass(this)"></a></li>
+          <li class="click-dot"><a id="2" onclick="togglecurretClass(this)"></a></li>
+          <li class="click-dot"><a id="3" onclick="togglecurretClass(this)"></a></li>
+          <li class="click-dot"><a id="4" onclick="togglecurretClass(this)"></a></li>
+          <li class="click-dot"><a id="5" onclick="togglecurretClass(this)"></a></li>
+          <li class="click-dot"><a id="6" onclick="togglecurretClass(this)"></a></li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects">
@@ -383,8 +414,8 @@
       <div class="experience-details-container">
         <div class="nav-bar">
           <!-- NAVIGATION BETWEEN CODEGEN AND PICAI -->
-          <a  class="nav" onclick="projectTab('left')">Code Gen</a>
-          <a  class="nav" onclick="projectTab('right')">Pic Ai</a>
+          <a  class="nav left" onclick="projectTab('left')">Code Gen</a>
+          <a  class="nav right" onclick="projectTab('right')">Pic Ai</a>
         </div>
       </div>
       <div class="project-container-tab">
@@ -420,6 +451,7 @@
             <button class="project-btn project-right-btn" onclick="toggleTab('right')"><img src="./assets/reshot-icon-bold-left-arrow-EZR3JVKL4M-60f71.svg" alt="right-arrow" style="transform: rotate(180deg)"></button>
           </div>
         </div>
+
         <!-- PICAI CONTAINER -->
         <div class="picai-container" >
           <div class="tab1-1" id="picai-tab">
@@ -479,8 +511,6 @@
           <button class="project-btn project-right-btn" onclick="picaitoggleTab('picai-right')"><img src="./assets/reshot-icon-bold-left-arrow-EZR3JVKL4M-60f71.svg" alt="right-arrow" style="transform: rotate(180deg)"></button>
         </div>
       </div>
-      
-
     </section>
     
     <!--------------- PROJECTS -------------------->
@@ -523,8 +553,8 @@
     </footer>
     <script src="script.js"></script>
 
-    <!-- POPUP RESUME -->
     <script>
+
       function openModal() {
         var modal = document.getElementById('myModal');
         modal.style.display = 'block';
@@ -564,6 +594,8 @@
           });
         });
       });
+
+      
 
       /* CODEGEN TAB */
 
@@ -618,7 +650,7 @@
           picai_current_tab = (picai_current_tab < tabs.length) ? picai_current_tab + 1 : 1;
         }
 
-        tabs[picai_current_tab - 1].classList.remove('hide-tab'); // Show the selected tab
+        tabs[picai_current_tab - 1].classList.remove('hide-tab');
       }
 
 
@@ -641,8 +673,6 @@
   
         }
       }
-
-
 
     </script>
     
