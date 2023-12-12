@@ -87,6 +87,7 @@ a.links-main:focus-visible{
   --_p: 0px;
   outline-color: var(--color);
   outline-offset: .05em;
+  border-bottom: 1px solid black;
 }
 
 a.links-main:active {
@@ -484,57 +485,13 @@ footer p {
   text-align: center;
 }
 
-.tech-sub-container{
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-  position: relative;
-  margin-top:60px;
-  height:290px;
-  border-radius: 80px;
-  background: #151515;
-  box-shadow: 0 20px 20px rgba(0,0,0, 0.9);
 
-}
-
-
-.tech-slider{
-  display: flex;
-  transition: transform 0.5s ease; /* Add transition property for smooth animation */
-
-}
-
-.item{
-  text-align: center;
-}
-
-.logo-title{
-  padding-top:40px;
-  color: white;
-  font-weight: bold;
-  font-size:20px;
-  padding-left:20px;
-}
-
-.tech-slider .item img{
-  position: relative;
-  top:30px;
-  width:200px;
-  padding-left:30px;
-  margin: 0;
-}
-
-
-.item{
-  display: inline-block;
-  
-}
 
 
 
 .scroll-btn {
   position: absolute;
-  padding-bottom:300px;
+  top:355%;
   transform: translateY(-50%);
   font-size: 60px;
   cursor: pointer;
@@ -551,6 +508,8 @@ footer p {
   backdrop-filter: blur(10px);
 	cursor: pointer;
   border-radius: 30px;
+  z-index: 1000;
+
 }
 
 .nav {
@@ -565,11 +524,12 @@ footer p {
 	transition: background 0.2s ease-out;
   font-size: 40px;
   letter-spacing: 1px;
+
   
 
 }
 
-.nav.left:hover{
+/* .nav.left:hover{
 	background: #131417;
   color: white;
   border-top-left-radius: 60px;
@@ -581,7 +541,7 @@ footer p {
   color: white;
   border-top-right-radius: 60px;
   border-bottom-right-radius: 60px;
-}
+} */
 
 .left{
   border-top-left-radius: 60px;
@@ -693,11 +653,14 @@ footer p {
 }
 
 .left-btn {
-  left: 110px;
+  position:absolute;
+  left: 50px;
 }
 
 .right-btn {
-  right: 110px;
+  position:absolute;
+
+  right: 60px;
 }
 
 .project-btn{

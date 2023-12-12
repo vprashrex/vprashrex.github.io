@@ -78,3 +78,32 @@ picaiContainer_mobile.style.display = "none";
 
 
 
+/* TECH SLIDER */
+
+
+
+let techTab = 1; // Initialize current tab index
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".stack-nav");
+  tabs.forEach((tab, index) => {
+    if (index !== 0) {
+      tab.classList.add("hide-tab");
+    }
+  });
+});
+
+
+function techSlide(direction) {
+  const tabs = document.querySelectorAll('.stack-nav');
+
+  tabs.forEach(tab => tab.classList.add("hide-tab")); // Hide all tabs
+
+  if (direction === 'left') {
+    techTab = (techTab === 1) ? 2 : 1;
+  } else if (direction === 'right') {
+    techTab = (techTab === 2) ? 1 : 2;
+  }
+
+  tabs[techTab - 1].classList.remove('hide-tab'); // Show the selected tab
+}
